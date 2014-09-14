@@ -1,5 +1,5 @@
 //
-//  Header.h
+//  WeMoNetworkManager.h
 //  WemoMagic
 //
 //  Created by Glen Ruhl on 9/14/14.
