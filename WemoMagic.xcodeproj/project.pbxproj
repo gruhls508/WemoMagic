@@ -53,6 +53,7 @@
 		516C9B7B19C5E01C00C3A0EC /* WemoMagicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WemoMagicTests-Info.plist"; sourceTree = "<group>"; };
 		516C9B7D19C5E01C00C3A0EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		516C9B7F19C5E01C00C3A0EC /* WemoMagicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WemoMagicTests.m; sourceTree = "<group>"; };
+		516C9B8919C5FA3D00C3A0EC /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +83,7 @@
 		516C9B4819C5E01B00C3A0EC = {
 			isa = PBXGroup;
 			children = (
+				516C9B8919C5FA3D00C3A0EC /* Header.h */,
 				516C9B5A19C5E01B00C3A0EC /* WemoMagic */,
 				516C9B7919C5E01C00C3A0EC /* WemoMagicTests */,
 				516C9B5319C5E01B00C3A0EC /* Frameworks */,
