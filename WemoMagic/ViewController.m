@@ -18,8 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    NSString* routerSsid = [[WeMoNetworkManager sharedWeMoNetworkManager]accessPoint];
-//    NSLog(@"routerSsid=%@",routerSsid);
+    NSString* routerSsid = [[WeMoNetworkManager sharedWeMoNetworkManager]accessPoint];
+    NSLog(@"routerSsid=%@",routerSsid);
 }
 
 

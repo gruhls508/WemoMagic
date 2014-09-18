@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "WeMoNetworkManager.h"
+#import "WeMoNetworkManager.h"
 
 @interface ViewController : UIViewController
 
