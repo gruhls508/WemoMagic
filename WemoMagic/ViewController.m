@@ -25,7 +25,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 {
-        return self.devicesArray.count;
+        return _devicesArray.count;
 
 }
 
@@ -33,11 +33,12 @@
 {
     static NSString *DeviceCellID = @"DeviceCellID";
 
-    _deviceCell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    _deviceCell = [tableView dequeueReusableCellWithIdentifier:@"deviceCell"];
+    [_deviceCell setDelegate:self];
+
 
 
     return _deviceCell;
-
 }
 
 @end

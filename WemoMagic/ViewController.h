@@ -10,7 +10,7 @@
 #import "WeMoNetworkManager.h"
 #import "DeviceCell.h"
 
-@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, DeviceCellDelegate>
 
 @property NSMutableArray *devicesArray;
 @property (strong, nonatomic) IBOutlet UITableView *deviceListTableView;

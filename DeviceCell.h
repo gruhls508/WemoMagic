@@ -8,7 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DeviceCell : UITableViewCell
+@protocol DeviceCellDelegate <NSObject>
+
+
+@required
+
+-(void) switchDidChanged:(id) sender;
+
+
+@end
+
+
+@interface DeviceCell : UITableViewCell {
+    id <DeviceCellDelegate> delegate;
+}
+
 @property (strong, nonatomic) IBOutlet UISwitch *stateSwitch;
+@property id <DeviceCellDelegate> delegate;
 
 @end
