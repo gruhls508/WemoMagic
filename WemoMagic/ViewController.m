@@ -33,9 +33,10 @@
 {
     static NSString *DeviceCellID = @"DeviceCellID";
 
-    UITableViewCell *deviceCell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    _deviceCell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
 
-    return deviceCell;
+
+    return _deviceCell;
 
 }
 

@@ -26,6 +26,7 @@
 		51A1E03519C92BDE00229BA4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A1E03419C92BDE00229BA4 /* SystemConfiguration.framework */; };
 		51A1E03719C92BF700229BA4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A1E03619C92BF700229BA4 /* Security.framework */; };
 		51A1E03919C92C0E00229BA4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A1E03819C92C0E00229BA4 /* MobileCoreServices.framework */; };
+		51AFA50119CC5A700002D63C /* DeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AFA50019CC5A700002D63C /* DeviceCell.m */; };
 		51D6D17D19CB81670067D355 /* BelkinSDKLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D6D17319CB81670067D355 /* BelkinSDKLibrary.a */; };
 		51D6D17E19CB81670067D355 /* Cybergarage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D6D17419CB81670067D355 /* Cybergarage.a */; };
 		51D6D17F19CB81670067D355 /* Reachability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D6D17519CB81670067D355 /* Reachability.a */; };
@@ -67,16 +68,18 @@
 		51A1E03419C92BDE00229BA4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		51A1E03619C92BF700229BA4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		51A1E03819C92C0E00229BA4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		51D6D17319CB81670067D355 /* BelkinSDKLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = BelkinSDKLibrary.a; sourceTree = "<group>"; };
-		51D6D17419CB81670067D355 /* Cybergarage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Cybergarage.a; sourceTree = "<group>"; };
-		51D6D17519CB81670067D355 /* Reachability.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Reachability.a; sourceTree = "<group>"; };
-		51D6D17619CB81670067D355 /* WeMoLocalControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = WeMoLocalControl.a; sourceTree = "<group>"; };
-		51D6D17719CB81670067D355 /* WeMoConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeMoConstants.h; sourceTree = "<group>"; };
-		51D6D17819CB81670067D355 /* WeMoControlDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeMoControlDevice.h; sourceTree = "<group>"; };
-		51D6D17919CB81670067D355 /* WeMoDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeMoDevice.h; sourceTree = "<group>"; };
-		51D6D17A19CB81670067D355 /* WeMoDiscoveryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeMoDiscoveryManager.h; sourceTree = "<group>"; };
-		51D6D17B19CB81670067D355 /* WeMoNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeMoNetworkManager.h; sourceTree = "<group>"; };
-		51D6D17C19CB81670067D355 /* WeMoStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeMoStateManager.h; sourceTree = "<group>"; };
+		51AFA4FF19CC5A700002D63C /* DeviceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceCell.h; path = ../DeviceCell.h; sourceTree = "<group>"; };
+		51AFA50019CC5A700002D63C /* DeviceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceCell.m; path = ../DeviceCell.m; sourceTree = "<group>"; };
+		51D6D17319CB81670067D355 /* BelkinSDKLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = BelkinSDKLibrary.a; path = ../BelkinSDKLibrary.a; sourceTree = "<group>"; };
+		51D6D17419CB81670067D355 /* Cybergarage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Cybergarage.a; path = ../Cybergarage.a; sourceTree = "<group>"; };
+		51D6D17519CB81670067D355 /* Reachability.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Reachability.a; path = ../Reachability.a; sourceTree = "<group>"; };
+		51D6D17619CB81670067D355 /* WeMoLocalControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = WeMoLocalControl.a; path = ../WeMoLocalControl.a; sourceTree = "<group>"; };
+		51D6D17719CB81670067D355 /* WeMoConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeMoConstants.h; path = ../WeMoConstants.h; sourceTree = "<group>"; };
+		51D6D17819CB81670067D355 /* WeMoControlDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeMoControlDevice.h; path = ../WeMoControlDevice.h; sourceTree = "<group>"; };
+		51D6D17919CB81670067D355 /* WeMoDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeMoDevice.h; path = ../WeMoDevice.h; sourceTree = "<group>"; };
+		51D6D17A19CB81670067D355 /* WeMoDiscoveryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeMoDiscoveryManager.h; path = ../WeMoDiscoveryManager.h; sourceTree = "<group>"; };
+		51D6D17B19CB81670067D355 /* WeMoNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeMoNetworkManager.h; path = ../WeMoNetworkManager.h; sourceTree = "<group>"; };
+		51D6D17C19CB81670067D355 /* WeMoStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeMoStateManager.h; path = ../WeMoStateManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,16 +118,6 @@
 		516C9B4819C5E01B00C3A0EC = {
 			isa = PBXGroup;
 			children = (
-				51D6D17319CB81670067D355 /* BelkinSDKLibrary.a */,
-				51D6D17419CB81670067D355 /* Cybergarage.a */,
-				51D6D17519CB81670067D355 /* Reachability.a */,
-				51D6D17619CB81670067D355 /* WeMoLocalControl.a */,
-				51D6D17719CB81670067D355 /* WeMoConstants.h */,
-				51D6D17819CB81670067D355 /* WeMoControlDevice.h */,
-				51D6D17919CB81670067D355 /* WeMoDevice.h */,
-				51D6D17A19CB81670067D355 /* WeMoDiscoveryManager.h */,
-				51D6D17B19CB81670067D355 /* WeMoNetworkManager.h */,
-				51D6D17C19CB81670067D355 /* WeMoStateManager.h */,
 				516C9B5A19C5E01B00C3A0EC /* WemoMagic */,
 				516C9B7919C5E01C00C3A0EC /* WemoMagicTests */,
 				516C9B5319C5E01B00C3A0EC /* Frameworks */,
@@ -165,6 +158,8 @@
 				516C9B6619C5E01C00C3A0EC /* Main.storyboard */,
 				516C9B6919C5E01C00C3A0EC /* ViewController.h */,
 				516C9B6A19C5E01C00C3A0EC /* ViewController.m */,
+				51AFA4FF19CC5A700002D63C /* DeviceCell.h */,
+				51AFA50019CC5A700002D63C /* DeviceCell.m */,
 				516C9B6C19C5E01C00C3A0EC /* Images.xcassets */,
 				516C9B5B19C5E01B00C3A0EC /* Supporting Files */,
 			);
@@ -174,6 +169,16 @@
 		516C9B5B19C5E01B00C3A0EC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				51D6D17319CB81670067D355 /* BelkinSDKLibrary.a */,
+				51D6D17419CB81670067D355 /* Cybergarage.a */,
+				51D6D17519CB81670067D355 /* Reachability.a */,
+				51D6D17619CB81670067D355 /* WeMoLocalControl.a */,
+				51D6D17719CB81670067D355 /* WeMoConstants.h */,
+				51D6D17819CB81670067D355 /* WeMoControlDevice.h */,
+				51D6D17919CB81670067D355 /* WeMoDevice.h */,
+				51D6D17A19CB81670067D355 /* WeMoDiscoveryManager.h */,
+				51D6D17B19CB81670067D355 /* WeMoNetworkManager.h */,
+				51D6D17C19CB81670067D355 /* WeMoStateManager.h */,
 				516C9B5C19C5E01B00C3A0EC /* WemoMagic-Info.plist */,
 				516C9B5D19C5E01B00C3A0EC /* InfoPlist.strings */,
 				516C9B6019C5E01B00C3A0EC /* main.m */,
@@ -300,6 +305,7 @@
 				516C9B6B19C5E01C00C3A0EC /* ViewController.m in Sources */,
 				516C9B6519C5E01B00C3A0EC /* AppDelegate.m in Sources */,
 				516C9B6119C5E01B00C3A0EC /* main.m in Sources */,
+				51AFA50119CC5A700002D63C /* DeviceCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
