@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "WeMoNetworkManager.h"
 #import "DeviceCell.h"
+#import "WeMoConstants.h"
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, DeviceCellDelegate>
 

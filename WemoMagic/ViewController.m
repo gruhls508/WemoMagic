@@ -20,12 +20,13 @@
     [super viewDidLoad];
     NSString* routerSsid = [[WeMoNetworkManager sharedWeMoNetworkManager]accessPoint];
     NSLog(@"routerSsid=%@",routerSsid);
+
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 {
-        return _devicesArray.count;
+        return 1;
 
 }
 
@@ -37,8 +38,15 @@
     [_deviceCell setDelegate:self];
 
 
-
     return _deviceCell;
 }
+
+-(IBAction)switchFlipped:(id) sender
+{
+    WeMoSetStateStatus result;
+//    WeMoControlDevice* device = [self.devicesArray objectAtIndex:userswitch.tag];
+
+}
+
 
 @end

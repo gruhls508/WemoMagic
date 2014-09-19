@@ -13,7 +13,7 @@
 
 @required
 
--(void) switchDidChanged:(id) sender;
+-(IBAction)switchFlipped:(id) sender;
 
 
 @end
