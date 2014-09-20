@@ -24,6 +24,7 @@
 }
 
 @property (strong, nonatomic) IBOutlet UISwitch *stateSwitch;
+@property (strong, nonatomic) IBOutlet UILabel *wemoLabel;
 @property id <DeviceCellDelegate> delegate;
 
 @end

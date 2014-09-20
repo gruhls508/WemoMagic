@@ -35,10 +35,17 @@
                                                         <action selector="switchFlipped:" destination="BYZ-38-t0r" eventType="valueChanged" id="Q7U-qw-h1k"/>
                                                     </connections>
                                                 </switch>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o26-0o-E0f">
+                                                    <rect key="frame" x="600" y="11" width="96" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="stateSwitch" destination="kqX-Zf-ytS" id="bTI-9k-ebc"/>
+                                            <outlet property="wemoLabel" destination="o26-0o-E0f" id="8Ld-yd-wor"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

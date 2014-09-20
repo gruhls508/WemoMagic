@@ -32,10 +32,12 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *DeviceCellID = @"DeviceCellID";
+//    static NSString *DeviceCellID = @"DeviceCellID";
 
     _deviceCell = [tableView dequeueReusableCellWithIdentifier:@"deviceCell"];
     [_deviceCell setDelegate:self];
+
+    _deviceCell.stateSwitch.tag = [indexPath row];
 
 
     return _deviceCell;
@@ -43,8 +45,7 @@
 
 -(IBAction)switchFlipped:(id) sender
 {
-    WeMoSetStateStatus result;
-//    WeMoControlDevice* device = [self.devicesArray objectAtIndex:userswitch.tag];
+//    WeMoSetStateStatus result;
 
 }
 
