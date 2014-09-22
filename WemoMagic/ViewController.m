@@ -26,7 +26,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 {
-        return 1;
+        return 2;
 
 }
 
@@ -36,17 +36,32 @@
 
     _deviceCell = [tableView dequeueReusableCellWithIdentifier:@"deviceCell"];
     [_deviceCell setDelegate:self];
+    _indexPath = [indexPath row];
 
-    _deviceCell.stateSwitch.tag = [indexPath row];
+    _deviceCell.stateSwitch.tag = _indexPath;
+    _device = [_devicesArray objectAtIndex:_indexPath];
+
+    _deviceCell.wemoLabel.text = _device.friendlyName;
+    _deviceCell.imageView.image = _device.icon;
 
 
     return _deviceCell;
 }
 
--(IBAction)switchFlipped:(id) sender
+-(IBAction)switchFlipped:(UISwitch *)sender
 {
-//    WeMoSetStateStatus result;
-
+    WeMoSetStateStatus result;
+//    if (!switchState) {
+//        result = [_device setPluginStatus:WeMoDeviceOff];
+//    }
+//    else{
+//        result = [device setPluginStatus:WeMoDeviceOn];
+//    }
+//    if (result == WeMoSetDeviceStatusSuccess) {
+//
+//    }else{
+//        NSString* errorMessage = [NSString stringWithFormat:STATE_CHANGE_ERROR_MESSAGE,result];
+//        UIAlertView* alertView = [[[UIAlertView alloc] initWithTitle:ALERT_ERROR_TITLE message:errorMessage delegate:nil cancelButtonTitle:OK_BUTTON otherButtonTitles: nil]
 }
 
 

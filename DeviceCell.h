@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "stateSwitch.h"
 
 @protocol DeviceCellDelegate <NSObject>
 
@@ -23,7 +24,7 @@
     id <DeviceCellDelegate> delegate;
 }
 
-@property (strong, nonatomic) IBOutlet UISwitch *stateSwitch;
+@property stateSwitch *stateSwitch;
 @property (strong, nonatomic) IBOutlet UILabel *wemoLabel;
 @property id <DeviceCellDelegate> delegate;
 

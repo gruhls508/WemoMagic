@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5108A13819CFC46400886831 /* stateSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5108A13719CFC46400886831 /* stateSwitch.m */; };
 		516C9B5519C5E01B00C3A0EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 516C9B5419C5E01B00C3A0EC /* Foundation.framework */; };
 		516C9B5719C5E01B00C3A0EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 516C9B5619C5E01B00C3A0EC /* CoreGraphics.framework */; };
 		516C9B5919C5E01B00C3A0EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 516C9B5819C5E01B00C3A0EC /* UIKit.framework */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5108A13619CFC46400886831 /* stateSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stateSwitch.h; path = ../stateSwitch.h; sourceTree = "<group>"; };
+		5108A13719CFC46400886831 /* stateSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = stateSwitch.m; path = ../stateSwitch.m; sourceTree = "<group>"; };
 		516C9B5119C5E01B00C3A0EC /* WemoMagic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WemoMagic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		516C9B5419C5E01B00C3A0EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		516C9B5619C5E01B00C3A0EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -158,8 +161,6 @@
 				516C9B6619C5E01C00C3A0EC /* Main.storyboard */,
 				516C9B6919C5E01C00C3A0EC /* ViewController.h */,
 				516C9B6A19C5E01C00C3A0EC /* ViewController.m */,
-				51AFA4FF19CC5A700002D63C /* DeviceCell.h */,
-				51AFA50019CC5A700002D63C /* DeviceCell.m */,
 				516C9B6C19C5E01C00C3A0EC /* Images.xcassets */,
 				516C9B5B19C5E01B00C3A0EC /* Supporting Files */,
 			);
@@ -169,6 +170,10 @@
 		516C9B5B19C5E01B00C3A0EC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				51AFA4FF19CC5A700002D63C /* DeviceCell.h */,
+				51AFA50019CC5A700002D63C /* DeviceCell.m */,
+				5108A13619CFC46400886831 /* stateSwitch.h */,
+				5108A13719CFC46400886831 /* stateSwitch.m */,
 				51D6D17319CB81670067D355 /* BelkinSDKLibrary.a */,
 				51D6D17419CB81670067D355 /* Cybergarage.a */,
 				51D6D17519CB81670067D355 /* Reachability.a */,
@@ -306,6 +311,7 @@
 				516C9B6519C5E01B00C3A0EC /* AppDelegate.m in Sources */,
 				516C9B6119C5E01B00C3A0EC /* main.m in Sources */,
 				51AFA50119CC5A700002D63C /* DeviceCell.m in Sources */,
+				5108A13819CFC46400886831 /* stateSwitch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
