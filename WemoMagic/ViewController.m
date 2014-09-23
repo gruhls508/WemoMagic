@@ -15,6 +15,9 @@
 
 @implementation ViewController
 
+
+# pragma mark Setting up View
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -32,27 +35,30 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    static NSString *DeviceCellID = @"DeviceCellID";
 
     _deviceCell = [tableView dequeueReusableCellWithIdentifier:@"deviceCell"];
     [_deviceCell setDelegate:self];
-    _indexPath = [indexPath row];
 
-    _deviceCell.stateSwitch.tag = _indexPath;
-    _device = [_devicesArray objectAtIndex:_indexPath];
+    WeMoControlDevice *device = [_devicesArray objectAtIndex:[indexPath row]];
 
-    _deviceCell.wemoLabel.text = _device.friendlyName;
-    _deviceCell.imageView.image = _device.icon;
-
+    _deviceCell.stateSwitch.tag = [indexPath row];
+    _deviceCell.wemoLabel.text = device.friendlyName;
+    _deviceCell.imageView.image = device.icon;
 
     return _deviceCell;
 }
 
+
+# pragma mark Methods
+
 -(IBAction)switchFlipped:(UISwitch *)sender
 {
+    NSLog(@"tag is %i", [sender tag]);
+
     WeMoSetStateStatus result;
+    WeMoControlDevice *device = [_devicesArray objectAtIndex:sender.tag];
 //    if (!switchState) {
-//        result = [_device setPluginStatus:WeMoDeviceOff];
+//        result = [device setPluginStatus:WeMoDeviceOff];
 //    }
 //    else{
 //        result = [device setPluginStatus:WeMoDeviceOn];
@@ -63,6 +69,7 @@
 //        NSString* errorMessage = [NSString stringWithFormat:STATE_CHANGE_ERROR_MESSAGE,result];
 //        UIAlertView* alertView = [[[UIAlertView alloc] initWithTitle:ALERT_ERROR_TITLE message:errorMessage delegate:nil cancelButtonTitle:OK_BUTTON otherButtonTitles: nil]
 }
+
 
 
 @end

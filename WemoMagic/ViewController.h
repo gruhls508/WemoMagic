@@ -12,12 +12,16 @@
 #import "WeMoConstants.h"
 #import "WeMoControlDevice.h"
 
+
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, DeviceCellDelegate>
+
 
 @property NSMutableArray *devicesArray;
 @property (strong, nonatomic) IBOutlet UITableView *deviceListTableView;
 @property DeviceCell *deviceCell;
-@property WeMoControlDevice *device;
+
 @property NSInteger indexPath;
+@property NSMutableArray *switchArray;
+
 
 @end
