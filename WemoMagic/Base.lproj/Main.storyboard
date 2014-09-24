@@ -44,6 +44,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="stateSwitch" destination="kqX-Zf-ytS" id="Tl9-0R-Kjq"/>
                                             <outlet property="wemoLabel" destination="o26-0o-E0f" id="8Ld-yd-wor"/>
                                         </connections>
                                     </tableViewCell>

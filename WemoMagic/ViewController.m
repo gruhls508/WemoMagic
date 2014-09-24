@@ -51,12 +51,12 @@
 
 # pragma mark Methods
 
--(IBAction)switchFlipped:(UISwitch *)sender
+-(IBAction)switchFlipped:(id)sender
 {
-    NSLog(@"tag is %i", [sender tag]);
+    int switchTag = [sender tag];
 
     WeMoSetStateStatus result;
-    WeMoControlDevice *device = [_devicesArray objectAtIndex:sender.tag];
+//    WeMoControlDevice *device = [_devicesArray objectAtIndex:sender.tag];
 //    if (!switchState) {
 //        result = [device setPluginStatus:WeMoDeviceOff];
 //    }
