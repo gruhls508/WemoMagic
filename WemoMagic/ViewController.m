@@ -39,9 +39,11 @@
     _deviceCell = [tableView dequeueReusableCellWithIdentifier:@"deviceCell"];
     [_deviceCell setDelegate:self];
 
-    WeMoControlDevice *device = [_devicesArray objectAtIndex:[indexPath row]];
+    WeMoControlDevice *device = [_devicesArray objectAtIndex:indexPath.row];
+    [_deviceCell.stateSwitch addTarget:self action:@selector(switchFlipped:) forControlEvents:UIControlEventTouchUpInside];
 
-    _deviceCell.stateSwitch.tag = [indexPath row];
+
+//    _deviceCell.stateSwitch.tag = indexPath.row;
     _deviceCell.wemoLabel.text = device.friendlyName;
     _deviceCell.imageView.image = device.icon;
 
@@ -51,11 +53,14 @@
 
 # pragma mark Methods
 
--(IBAction)switchFlipped:(id)sender
+-(void)switchFlipped:(id)sender
 {
-    int switchTag = [sender tag];
-
+    UITableViewCell *selectedCell = (UITableViewCell *)[[[sender superview] superview] superview];
+    NSIndexPath *indexPath = [_deviceListTableView indexPathForCell:selectedCell];
+    if (indexPath != nil)
+    {
     WeMoSetStateStatus result;
+
 //    WeMoControlDevice *device = [_devicesArray objectAtIndex:sender.tag];
 //    if (!switchState) {
 //        result = [device setPluginStatus:WeMoDeviceOff];
@@ -68,6 +73,7 @@
 //    }else{
 //        NSString* errorMessage = [NSString stringWithFormat:STATE_CHANGE_ERROR_MESSAGE,result];
 //        UIAlertView* alertView = [[[UIAlertView alloc] initWithTitle:ALERT_ERROR_TITLE message:errorMessage delegate:nil cancelButtonTitle:OK_BUTTON otherButtonTitles: nil]
+    }
 }
 
 
