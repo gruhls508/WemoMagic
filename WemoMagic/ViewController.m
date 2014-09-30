@@ -22,7 +22,7 @@
 {
     [super viewDidLoad];
     NSString* routerSsid = [[WeMoNetworkManager sharedWeMoNetworkManager]accessPoint];
-    NSLog(@"routerSsid=%@",routerSsid);
+    NSLog(@"routerSsid = %@",routerSsid);
 
 }
 
