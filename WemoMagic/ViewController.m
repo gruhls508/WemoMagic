@@ -40,7 +40,7 @@
     [_deviceCell setDelegate:self];
 
     WeMoControlDevice *device = [_devicesArray objectAtIndex:indexPath.row];
-    [_deviceCell.stateSwitch addTarget:self action:@selector(switchFlipped:) forControlEvents:UIControlEventTouchUpInside];
+//    [_deviceCell.stateSwitch addTarget:self action:@selector(switchFlipped:) forControlEvents:UIControlEventTouchUpInside];
 
 
 //    _deviceCell.stateSwitch.tag = indexPath.row;
@@ -53,7 +53,7 @@
 
 # pragma mark Methods
 
--(void)switchFlipped:(id)sender
+-(IBAction)switchFlipped:(id)sender
 {
     UITableViewCell *selectedCell = (UITableViewCell *)[[[sender superview] superview] superview];
     int i = [[_deviceListTableView indexPathForCell:selectedCell]row];
