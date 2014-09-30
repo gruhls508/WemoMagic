@@ -29,7 +29,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 {
-        return 2;
+        return 3;
 
 }
 
@@ -56,10 +56,10 @@
 -(void)switchFlipped:(id)sender
 {
     UITableViewCell *selectedCell = (UITableViewCell *)[[[sender superview] superview] superview];
-    NSIndexPath *indexPath = [_deviceListTableView indexPathForCell:selectedCell];
-    if (indexPath != nil)
-    {
-    WeMoSetStateStatus result;
+    int i = [[_deviceListTableView indexPathForCell:selectedCell]row];
+//    if (indexPath != nil)
+//    {
+//    WeMoSetStateStatus result;
 
 //    WeMoControlDevice *device = [_devicesArray objectAtIndex:sender.tag];
 //    if (!switchState) {
@@ -73,7 +73,7 @@
 //    }else{
 //        NSString* errorMessage = [NSString stringWithFormat:STATE_CHANGE_ERROR_MESSAGE,result];
 //        UIAlertView* alertView = [[[UIAlertView alloc] initWithTitle:ALERT_ERROR_TITLE message:errorMessage delegate:nil cancelButtonTitle:OK_BUTTON otherButtonTitles: nil]
-    }
+//    }
 }
 
 
